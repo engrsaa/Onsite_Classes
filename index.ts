@@ -5,7 +5,7 @@
     // call stack, event loop, callback que
 // H.W
     // hamzah syed async search videos on youtube
-    // first video end questions are important for quiz
+    // questions in the end of the video are important for quiz
 // let j=0;//intended to delay code output
 // console.log('i');
 // console.log('eat');
