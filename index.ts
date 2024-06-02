@@ -1,68 +1,50 @@
-// sync - single task performance at a time
-// async - step09e_async in Sir Zia repo - 
-    // in async approach we are doing multiple tasks at a time
-    // google all of the following terms to understand science behind async programming
-    // call stack, event loop, callback que
 // H.W
-    // hamzah syed async search videos on youtube
-    // first video end questions are important for quiz
-// let j=0;//intended to delay code output
-// console.log('i');
-// console.log('eat');
-// setTimeout(() => {//this built in function runs asynchronously
-    // console.log('like to eat');
-    // setTimeout(() => {
-    //     console.log('mango');
-    // }, 1000);
-// }, 1000);//if time is zero than it also print time out console lastly
-// for(let i=0;i<1000000000;i++){j=j+1;}
-// console.log('icecream');
+// example of switch statement with enum
+// enum - important for quiz - 2nd PDF page # 291
+// examine difference of any and unknown
 
-// const orderPizza = (preparedCb:any) => {
-//     console.log('Placing order!');
-//     setTimeout(() => {
-//         console.log('Order placed');
-//         preparedCb(delivery);//this is a callback function
-//     }, 3000);
-// }
-// orderPizza(preparePizza);
-// function preparePizza(deliveryCb:any){
-//     console.log('Preparing Pizza');
-//     setTimeout(() => {
-//         console.log('Pizza is being prepared');
-//         deliveryCb();
-//     }, 3000);
-// }
-// function delivery(){
-//     console.log('Order dispatched!');
-//     setTimeout(() => {
-//         console.log('Pizza is delivered');
-//     }, 5000);
-// }
-// preparePizza();
 
-// to avoid calback hell we use promises
-
-function preparePizza(){
-    return new Promise((resolve)=>{
-        console.log('Preparing Pizza');
-        setTimeout(() => {
-            console.log('Pizza is being prepared');
-            resolve('');
-        }, 3000);
-    });
+// const enum Color{
+//     Red,// in manual setting of index no. its index remains 0
+//     Yellow=4,// set index no. explicitly
+//     Green
+// }
+// console.log('Prints Index No. ->',Color.Red);
+// console.log('Prints Yellow ->',Color[1]);
+// console.log('Prints Index No. ->',Color['Red']);
+// let myCondition:Color = Color["Yellow"];
+// switch(myCondition){
+//     case Number(Color.Red):
+//         console.log("Stop!");
+//         break;
+//     case Color['Yellow']:
+//         console.log("Ready!");
+//         break;
+//     case Number(Color.Green):
+//         console.log("Go!");
+//         break;
+// }
+// const enum Color{
+//     Red,
+//     Yellow,
+//     Green
+// }
+// console.log(Color.Green);
+// console.log(Color[1]);
+// console.log(Color.Green);
+// -------------------
+// loops - 2nd PDF page # 403
+// for loop
+// for(let i=0;i<=54;i=i+2){
+//     console.log(i);
+// }
+// for(let i=10;i>0;i--){
+//     console.log(`${i} hello world!`);
+// }
+let cars:string[]=['Vitz','Corolla','Mehran','Civic','City'];
+for(let i=0;i<cars.length;i++){
+    console.log(`${cars[i]}`);
 }
-function orderPizzaProm(){
-    return new Promise((resolve)=>{
-        setTimeout(()=>{
-            console.log('Order Placed!');
-            resolve('');
-        },1000);
-    })
-}
-
-// orderPizzaProm().then(preparePizza)//resolve function
-
-// async await
-let result = await orderPizzaProm();
-let result1 = await preparePizza();
+// cars.forEach(element=>console.log(element));
+// any data type
+// may use unknown type in replacement of any
