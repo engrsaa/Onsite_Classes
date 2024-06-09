@@ -2,7 +2,9 @@
 // oop - objects & classes based coding style
 // oop has four pillars abbraction, encapsulation, inheritance and polymorphism
 // class is used to create object with either property or function
-// H.W university management system shared on discord class channel
+// H.W make the university management system from the following video link and understand oop concept from the diagram
+// video link - https://www.youtube.com/watch?v=O3kxSB5GBWQ
+// diagram link - https://drive.google.com/file/d/1xFUYd6GW5U0tSQSN8_xi5QvFKrlxYfF0/view?usp=sharing
 class House {
     readonly houseNumber!:number;//needs to ignore error of initializer set it like houseNumber!:number
     houseOwner:string;
